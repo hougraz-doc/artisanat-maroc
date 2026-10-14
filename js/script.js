@@ -30,4 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => button.textContent = "Voir", 1400);
     });
   });
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event': 'add_to_cart',
+    'ecommerce': {
+      'currency': 'DH',
+      'value': 149.00,
+      'items': [{
+        'item_id': 'ART-042',
+        'item_name': 'Sac en cuir artisanal',
+        'item_category': 'Maroquinerie',
+        'quantity': 1,
+        'price': 149.00
+      }]
+    }
+  });
 });
